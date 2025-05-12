@@ -52,7 +52,7 @@ nav {
 }
 
 .nome-container {
-    
+
     font-size: 5vw;
     font-weight: 900;
     width: 60%;
@@ -67,18 +67,33 @@ nav {
     animation-delay: 14s;
     animation: fadeIn 1s ease forwards;
 }
-.nome-personagem{
+
+.nome-personagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    height: 100px;
+}
+
+.nome-personagem img {
+    box-sizing: border-box;
+    object-fit: contain;
+    height: 10rem;
+}
+
+.titulo-personagem {
     display: flex;
     align-items: center;
     justify-content: center;
     object-fit: contain;
 }
-.titulo-personagem{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.titulo-personagem img{
+    box-sizing: border-box;
     object-fit: contain;
+    height: 8rem;
 }
+
 @keyframes fadeIn {
     to {
         opacity: 1;
