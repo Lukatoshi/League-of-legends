@@ -1,0 +1,60 @@
+/* intro.css */
+
+.intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #060E17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+  animation: fadeOut 1s ease forwards;
+  animation-delay: 4s;
+}
+
+.logo-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  border: 8px solid transparent;
+  border-top: 8px solid white;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  z-index: 1;
+}
+
+/* loader girando */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* animação para sumir a tela */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

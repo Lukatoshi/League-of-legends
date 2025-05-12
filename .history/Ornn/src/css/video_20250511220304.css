@@ -1,0 +1,25 @@
+body, html {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-container {
+  position: fixed; /* Fixa o vídeo em toda a tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Fica atrás do conteúdo */
+  opacity: 1;
+  transition: opacity 1s ease; /* Efeito de fade */
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que o vídeo cubra toda a tela */
+}

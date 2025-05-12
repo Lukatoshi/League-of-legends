@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body, html{
+    height: 100vh;
+    margin: 0;
+    background-image: url(/Ornn/src/assets/Ornn_mais_brao.webp);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+    
+}
+main

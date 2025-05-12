@@ -1,0 +1,59 @@
+.intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+  animation: fadeOut 1s ease forwards;
+  animation-delay: 4s;
+}
+
+.logo-container {
+  position: relative;
+  width: 200px;    /* aumentei para acomodar o novo tamanho do logo + loader */
+  height: 200px;
+}
+
+.logo {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centraliza perfeitamente */
+  z-index: 2;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border: 8px solid transparent;
+  border-top: 8px solid white;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  z-index: 1;
+}
+
+/* loader girando */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* animação para sumir a tela */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

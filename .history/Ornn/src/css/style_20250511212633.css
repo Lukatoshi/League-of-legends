@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,
+html {
+    height: 100vh;
+    margin: 0;
+    background-image: url(/Ornn/src/assets/Ornn_mais_brao.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+nav {
+    top: 0;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.section-personagem {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    overflow: hidden;
+    animation: fadeOut 1s ease forwards;
+    animation-delay: 4s;
+}
+
+.personagem-container {
+    font-family: 'Impact', sans-serif;
+    position: relative;
+    width: 800px;
+    height: 800px;
+}
+
+.nome-container {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+}

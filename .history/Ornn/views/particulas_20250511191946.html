@@ -1,0 +1,61 @@
+<!-- wp:cover {"overlayColor":"custom-dark-blue-2","className":"ticss-82afcc60 ","layout":{"type":"constrained"},"hasCustomCSS":true,"customCSS":".glow {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  border-radius: 50%;\n  -webkit-animation: glow 3s linear 0s infinite alternate;\n}\n\n.particles {\n  position: absolute;\n  top: calc(50% - 50px);\n  left: calc(50% - 50px);\n  width: 100px;\n  height: 100px;\n  \n}\n\n.rotate {\n  position: absolute;\n  top: calc(50% - 5px);\n  left: calc(50% - 5px);\n  width: 10px;\n  height: 10px;\n}\n\n.angle {\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n\n.size {\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n\n.position {\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n\n.pulse {\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n\n.particle {\n  position: absolute;\n  top: calc(50% - 5px);\n  left: calc(50% - 5px);\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n}\n\n.rotate {\n  -webkit-animation: rotate 20s linear 0s infinite alternate;\n}\n\n.pulse{\n  -webkit-animation: pulse 1.5s linear 0s infinite alternate;\n}\n\n\n@-webkit-keyframes glow {\n  0% {\n    transform: rotate(0deg);\n    box-shadow: 0 0 60px 20px #56bcf9, 25px 15px 50px 10px #fff, -5px -25px 30px 5px #fff;\n  }\n  100% {\n        transform: rotate(5deg);\n    box-shadow: 0 0 90px 20px #56bcf9, 35px 20px 40px 10px #fff, -30px -30px 40px 5px #fff;\n  }\n}\n\n@-webkit-keyframes rotate {\n  0% {\n    -webkit-transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n  }\n}\n\n@-webkit-keyframes angle {\n  0% {\n    -webkit-transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n  }\n}\n\n@-webkit-keyframes size {\n  0% {\n    -webkit-transform: scale(.2);\n  }\n  100% {\n    -webkit-transform: scale(.6);\n  }\n}\n\n@-webkit-keyframes position {\n  0% {\n    -webkit-transform: translate3d(0,0,0);\n    opacity: 1;\n  }\n  50 %{\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: translate3d(100px,100px,0);\n    opacity: 0;\n  }\n}\n\n@-webkit-keyframes pulse {\n  0% {\n    -webkit-transform: scale(1);\n  }\n  100% {\n    -webkit-transform: scale(.5);\n  }\n}\n\n@-webkit-keyframes particle {\n  0% {\n    box-shadow: inset 0 0 20px 20px #0079e8, 0 0 50px 10px #0079e8, inset 0 0 80px 80px #269aff;\n  }\n  33.33% {\n    box-shadow: inset 0 0 20px 20px #0079e8, 0 0 130px 10px #0079e8, inset 0 0 50px 50px #269aff;\n  }\n  33.34% {\n    box-shadow: inset 0 0 20px 20px #2693ff, 0 0 50px 10px #2693ff, inset 0 0 80px 80px #52abff;\n  }\n  66.66% {\n    box-shadow: inset 0 0 20px 20px #2693ff, 0 0 130px 10px #2693ff, inset 0 0 50px 50px #52abff;\n  }\n  66.67% {\n    box-shadow: inset 0 0 20px 20px #485fe8, 0 0 50px 10px #485fe8, inset 0 0 80px 80px #7d71e8;\n  }\n  100% {\n    box-shadow: inset 0 0 20px 20px #485fe8, 0 0 130px 10px #485fe8, inset 0 0 50px 50px #7d71e8;\n  }\n}\n\n\n\n.rotate .angle:nth-child(1){\n  /* change the angle every 2 seconds */\n  -webkit-animation: angle 10s steps(5) 0s infinite;\n}\n.rotate .angle:nth-child(1) .size{\n  /* change the size of the particle every 2 seconds */\n  -webkit-animation: size 10s steps(5) 0s infinite;\n}\n.rotate .angle:nth-child(1) .particle{\n  /* animate the glow and change the color every 2 seconds */\n  -webkit-animation: particle 6s linear infinite alternate;\n}\n.rotate .angle:nth-child(1) .position{\n  /* animate the fly out of the particle and its fade out at the end */\n  -webkit-animation: position 2s linear 0s infinite;\n}\n\n\n\n.rotate .angle:nth-child(2){\n  /* change the angle every 2 seconds */\n  -webkit-animation: angle 4.95s steps(3) -1.65s infinite;\n}\n.rotate .angle:nth-child(2) .size{\n  /* change the size of the particle every 2 seconds */\n  -webkit-animation: size 4.95s steps(3) -1.65s infinite alternate;\n}\n.rotate .angle:nth-child(2) .particle{\n  /* animate the glow and change the color every 2 seconds */\n  -webkit-animation: particle 4.95s linear -3.3s infinite alternate;\n}\n.rotate .angle:nth-child(2) .position{\n  /* animate the fly out of the particle and its fade out at the end */\n  -webkit-animation: position 1.65s linear 0s infinite;\n}\n\n\n.rotate .angle:nth-child(3){\n  /* change the angle every 2 seconds */\n  -webkit-animation: angle 13.76s steps(8) -6.88s infinite;\n}\n.rotate .angle:nth-child(3) .size{\n  /* change the size of the particle every 2 seconds */\n  -webkit-animation: size 6.88s steps(4) -5.16s infinite alternate;\n}\n.rotate .angle:nth-child(3) .particle{\n  /* animate the glow and change the color every 2 seconds */\n  -webkit-animation: particle 5.16s linear -1.72 infinite alternate;\n}\n.rotate .angle:nth-child(3) .position{\n  /* animate the fly out of the particle and its fade out at the end */\n  -webkit-animation: position 1.72s linear 0s infinite;\n}\n\n.rotate .angle:nth-child(5) .position{\n  /* animate the fly out of the particle and its fade out at the end */\n  -webkit-animation: position 2.45s linear 0s infinite;\n}"} 
+<div class="wp-block-cover ticss-82afcc60"><span aria-hidden="true" class="wp-block-cover__background has-custom-dark-blue-2-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","style":{"typography":{"fontSize":"56px"}}} -->
+<p class="has-text-align-center" style="font-size:56px">Glow Particle Effect</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"83px"} -->
+<div style="height:83px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:html -->
+<div class="glow"></div>
+<div class="particles">
+
+    <div class="rotate">
+
+        <div class="angle">
+            <div class="size">
+                <div class="position">
+                    <div class="pulse">
+                        <div class="particle">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="angle">
+            <div class="size">
+                <div class="position">
+                    <div class="pulse">
+                        <div class="particle">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="angle">
+            <div class="size">
+                <div class="position">
+                    <div class="pulse">
+                        <div class="particle">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- /wp:html --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div></div>
+<!-- /wp:cover -->

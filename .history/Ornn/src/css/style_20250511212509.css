@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body, html{
+    height: 100vh;
+    margin: 0;
+    background-image: url(/Ornn/src/assets/Ornn_mais_brao.webp);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+    
+}
+nav{
+    top: 0;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.personagem-container{
+    font-family: 'Impact', sans-serif;
+    position: relative;
+    width: 800px;
+    height: 800px;
+}
