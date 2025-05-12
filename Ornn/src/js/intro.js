@@ -6,7 +6,7 @@
   document.head.appendChild(css);
 
   // Carrega HTML da intro
-  const res = await fetch('../intro.html');
+  const res = await fetch('/Ornn/src/views/intro.html');
   const html = await res.text();
   const wrapper = document.createElement('div');
   wrapper.innerHTML = html;
