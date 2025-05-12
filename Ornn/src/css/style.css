@@ -67,7 +67,18 @@ nav {
     animation-delay: 14s;
     animation: fadeIn 1s ease forwards;
 }
-
+.nome-personagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+.titulo-personagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
 @keyframes fadeIn {
     to {
         opacity: 1;
