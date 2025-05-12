@@ -61,6 +61,6 @@ window.addEventListener('load', () => {
         videoContainer.remove();
       }, 1000); // duração do fade
     }, 10000); // tempo de exibição do vídeo
-  }, 3500); // tempo da intro
+  }, 3000); // tempo da intro
 });
 
